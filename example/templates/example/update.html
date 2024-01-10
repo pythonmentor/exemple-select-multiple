@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<main class="p-4">
+    <form method="post">
+        {% csrf_token %}
+        {% crispy form %}
+        <button class="bg-sky-300 p-2 rounded-lg" type="submit">Enregistrer</button>
+    </form>
+</main>
+{% endblock content %}

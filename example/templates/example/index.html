@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Bienvenue sur mon exemple</h1>
+
+<p>Les articles disponibles:</p>
+{% for article in object_list %}
+    {% if forloop.first %}<ul>{% endif %}
+        <li><a href="{% url 'update' article.pk %}">{{ article.title }}</a></li>
+    {% if forloop.last %}</ul>{% endif %}
+{% empty %}
+    <p>Aucun article n'a encore été rédigé</p>
+{% endfor %}
+
+{% endblock content %}
