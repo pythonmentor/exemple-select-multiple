@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<main class="p-4">
+<main class="container mx-auto pt-4">
     <form method="post">
         {% csrf_token %}
         {% crispy form %}

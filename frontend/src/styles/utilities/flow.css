@@ -1,0 +1,41 @@
+@layer utilities {
+    .flow-1 > * + * {
+        @apply mt-1;
+    }
+
+    .flow-2 > * + * {
+        @apply mt-2;
+    }
+
+    .flow-3 > * + * {
+        @apply mt-3;
+    }
+
+    .flow-4 > * + * {
+        @apply mt-4;
+    }
+
+    .flow-5 > * + * {
+        @apply mt-5;
+    }
+
+    .flow-6 > * + * {
+        @apply mt-6;
+    }
+
+    .flow-7 > * + * {
+        @apply mt-7;
+    }
+
+    .flow-8 > * + * {
+        @apply mt-8;
+    }
+
+    .flow-9 > * + * {
+        @apply mt-9;
+    }
+
+    .flow-10 > * + * {
+        @apply mt-10;
+    }
+}
